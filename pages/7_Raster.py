@@ -18,10 +18,10 @@ st.title("Split-panel Map")
 with st.expander("See source code"):
     with st.echo():
         m = leafmap.Map()
-        before = "https://github.com/opengeos/datasets/releases/download/raster/Libya-2023-07-01.tif"
-        after = "https://github.com/opengeos/datasets/releases/download/raster/Libya-2023-09-13.tif"
+        before = "https://github.com/fener95/tiffs-repo/raw/main/img23_true_color.tif"
+        after = "https://github.com/fener95/tiffs-repo/raw/main/img24_true_color.tif"
         m.split_map(
-            left_layer=before, right_layer=after, left_label = "Before", right_label="After"
+            left_layer=before, right_layer=after, left_label = "Before", right_label="After",
         )
 
 m.to_streamlit(height=700)
